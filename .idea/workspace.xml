@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f15223ed-5e0e-4fa1-843d-7ad425340854" name="Default Changelist" comment="" />
+    <list default="true" id="f15223ed-5e0e-4fa1-843d-7ad425340854" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasw_manager_v1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pasw_manager_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_excercise_00.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_excercise_00.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ahiJD8KTDpExikxTHfqiIM2XGJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,10 +37,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.tkinter_excercise_00">
-    <configuration name="pasw_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.pasw_manager_v2">
+    <configuration name="pasw_manager_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tkinter_pasw_manager" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -34,7 +50,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pasw_manager.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pasw_manager_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pasw_manager_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tkinter_pasw_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pasw_manager_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,10 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pasw_manager_v2" />
+        <item itemvalue="Python.pasw_manager_v1" />
+        <item itemvalue="Python.tk_practice_01" />
         <item itemvalue="Python.tkinter_excercise_00" />
-        <item itemvalue="Python.tkinter_widgets" />
-        <item itemvalue="Python.simple_registration_form" />
-        <item itemvalue="Python.pasw_manager" />
+        <item itemvalue="Python.tkinter_excercise_00" />
       </list>
     </recent_temporary>
   </component>
@@ -120,9 +155,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="378" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587295345128">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1587295345128" />
     <state x="310" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1587194477217">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="310" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1587194477217" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587210233084">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1587210233084" />
   </component>
 </project>
