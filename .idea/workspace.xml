@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f15223ed-5e0e-4fa1-843d-7ad425340854" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tkinter_pasw_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tkinter_pasw_manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bulk_edit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/edit_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/password_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pasw_manager_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pasw_manager_v2.py" afterDir="false" />
     </list>
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pasw_manager_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -34,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="629">
+              <caret line="37" lean-forward="true" selection-start-line="34" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -52,8 +49,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/password_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+            <state relative-caret-position="382">
+              <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bulk_edit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -70,15 +79,22 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>client_pasw_dict</find>
+      <find>save_pass</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pasw_manager_v2.py" />
         <option value="$PROJECT_DIR$/add_client.py" />
         <option value="$PROJECT_DIR$/edit_client.py" />
+        <option value="$PROJECT_DIR$/pasw_manager_v2.py" />
+        <option value="$PROJECT_DIR$/bulk_edit.py" />
         <option value="$PROJECT_DIR$/password_manager.py" />
       </list>
     </option>
@@ -255,6 +271,14 @@
       <option name="presentableId" value="Default" />
       <updated>1587194153150</updated>
     </task>
+    <task id="LOCAL-00001" summary="- positioning Add, Edit Frames&#10;- fixing Edit password Entry not properly showing current pasw">
+      <created>1587342385679</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587342385679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -262,8 +286,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" />
@@ -280,6 +304,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- positioning Add, Edit Frames&#10;- fixing Edit password Entry not properly showing current pasw" />
+    <option name="LAST_COMMIT_MESSAGE" value="- positioning Add, Edit Frames&#10;- fixing Edit password Entry not properly showing current pasw" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="378" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587295345128">
       <screen x="0" y="0" width="1280" height="800" />
@@ -295,23 +323,6 @@
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1587210233084" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/add_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pasw_manager_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edit_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -319,10 +330,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/add_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" lean-forward="true" selection-start-line="34" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bulk_edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pasw_manager_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/password_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+        <state relative-caret-position="382">
+          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

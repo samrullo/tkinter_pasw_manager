@@ -4,6 +4,8 @@ import os
 import pickle
 from add_client import AddClient
 from edit_client import EditClient
+from bulk_edit import BulkEditPasswords
+from tkinter.filedialog import askopenfile
 
 
 class PasswordManager:
@@ -23,6 +25,12 @@ class PasswordManager:
         self.frameEditClient = Frame(self.window)
         self.editClientObj = EditClient(self.frameEditClient, self)
         self.editClientObj.create_widgets()
+
+        self.frameBulkEdit = Frame(self.window)
+        self.bulkEditObj = BulkEditPasswords(self.frameBulkEdit, self)
+        self.bulkEditObj.create_widgets()
+
+        self.make_menu_bar()
 
         self.frameBody = Frame(self.window)
         self.frameBody.grid()
@@ -61,6 +69,27 @@ class PasswordManager:
                                        bg="coral", activebackground="green", command=self.open_edit_client_pasw)
         self.editClientButton.grid(pady=10)
 
+    def make_menu_bar(self):
+        menubar = Menu(self.window)
+        file_menu = Menu(menubar, tearoff=0)
+        # file_menu.add_command(label="Choose Password File", command=self.choose_pasw_file)
+        file_menu.add_command(label="Bulk Edit Passwords", command=self.bulk_edit_passwords)
+        # file_menu.add_separator()
+        # file_menu.add_command(label="Exit", command=self.window.quit)
+        menubar.add_cascade(label="File", menu=file_menu)
+        self.window.config(menu=menubar)
+
+    def choose_pasw_file(self):
+        pasw_filepath = askopenfile(filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
+        logging.info(f"chosen password file path : {pasw_filepath}")
+        self.pasw_file = pasw_filepath
+
+    def bulk_edit_passwords(self):
+        logging.info(f"will open bulk edit frame")
+        self.frameBody.grid_remove()
+        self.frameBulkEdit.grid()
+        self.bulkEditObj.reset()
+
     def load_passwords(self):
         if os.path.exists(self.pasw_file):
             with open(self.pasw_file, "rb") as fh:
@@ -75,6 +104,8 @@ class PasswordManager:
         with open(self.pasw_file, "wb") as fh:
             pickle.dump(client_pasw_dict, fh)
             logging.info(f"finished dumping {len(client_pasw_dict)} client passwords")
+        self.client_pasw_dict = self.load_passwords()
+        logging.info(f"also finished loading newly saved passwords")
 
     def renderAllPasswords(self):
         logging.info("will render all passwords")

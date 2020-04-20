@@ -12,7 +12,6 @@ logger.setLevel(logging.INFO)
 def main():
     window = Tk()
     window.title("Password Manager")
-    window.geometry("800x600")
 
     paswManagerObj = PasswordManager(window)
     window.mainloop()
