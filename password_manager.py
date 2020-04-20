@@ -5,22 +5,29 @@ import pickle
 from add_client import AddClient
 from edit_client import EditClient
 
-class PasswordManager:
-    def __init__(self,window):
-        self.window=window
 
-        self.frameNewClient=Frame(self.window)
-        self.addClientObj=AddClient(self.frameNewClient,self)
+class PasswordManager:
+    def __init__(self, window):
+        self.window = window
+
+        # visual related
+        self.VERTICAL_PADDING = 10
+        self.font = "Arial 15"
+        self.foreground_color = "coral"
+        self.button_bg_color = ""
+
+        self.frameNewClient = Frame(self.window)
+        self.addClientObj = AddClient(self.frameNewClient, self)
         self.addClientObj.create_widgets()
 
-        self.frameEditClient=Frame(self.window)
-        self.editClientObj=EditClient(self.frameEditClient,self)
+        self.frameEditClient = Frame(self.window)
+        self.editClientObj = EditClient(self.frameEditClient, self)
         self.editClientObj.create_widgets()
 
-        self.frameBody=Frame(self.window)
+        self.frameBody = Frame(self.window)
         self.frameBody.grid()
-        self.pasw_file=os.path.relpath(".pasw")
-        self.client_pasw_dict=self.get_client_pasw_dict()
+        self.pasw_file = os.path.relpath(".pasw")
+        self.client_pasw_dict = self.get_client_pasw_dict()
         self.make_searchbox_header()
         self.make_list_box()
         self.renderAllPasswords()
@@ -45,10 +52,9 @@ class PasswordManager:
         client_pasw_dict = self.load_passwords()
         return client_pasw_dict
 
-
     def make_add_edit_buttons(self):
         self.addClientButton = Button(self.frameBody, text="Add New Client", font="Arial 15", width=40, padx=10, pady=10,
-                                 bg="coral", activebackground="green", command=self.open_new_client_frame)
+                                      bg="coral", activebackground="green", command=self.open_new_client_frame)
         self.addClientButton.grid(pady=10)
 
         self.editClientButton = Button(self.frameBody, text="Edit Client", font="Arial 15", width=40, padx=10, pady=10,
@@ -102,14 +108,29 @@ class PasswordManager:
     def open_new_client_frame(self):
         logging.info(f"will add a new client")
         self.frameBody.grid_remove()
-        self.frameNewClient.grid()
+
+        ## calculate horizontal  and vertical paddings
+        paddings = self.calc_paddings()
+        self.frameNewClient.grid(row=0, column=0, padx=paddings[0], pady=paddings[1], sticky="nsew")
 
     def open_edit_client_pasw(self):
         client_pasw_lines = self.listBox.get(0, END)
         if len(client_pasw_lines) > 0:
             client_pasw_line = client_pasw_lines[0]
             client, pasw = client_pasw_line.split(":")
+            client = client.strip()
+            pasw = pasw.strip()
             logging.info(f"will edit {client},{pasw}")
             self.frameBody.grid_remove()
-            self.editClientObj.set_client_pasw_to_edit(client,pasw)
-            self.frameEditClient.grid()
+            self.editClientObj.set_client_pasw_to_edit(client, pasw)
+            paddings = self.calc_paddings()
+            self.frameEditClient.grid(padx=paddings[0], pady=paddings[1])
+
+    def calc_paddings(self):
+        ## calculate horizontal  and vertical paddings
+        pad_horizontal = self.window.winfo_width() / 4
+        logging.info(f"calculated horizontal padding : {pad_horizontal}")
+
+        pad_vertical = self.window.winfo_height() / 4
+        logging.info(f"calculated vertical padding : {pad_vertical}")
+        return (pad_horizontal, pad_vertical)
