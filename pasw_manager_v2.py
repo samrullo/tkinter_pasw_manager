@@ -13,7 +13,7 @@ def main():
     window = Tk()
     window.title("Password Manager")
 
-    paswManagerObj = PasswordManager(window)
+    paswManagerObj = PasswordManager(window, pasw_folder=r"H:\Users\samrullo\GPAS_position\secrets", pasw_file=".pasw")
     window.mainloop()
 
 
