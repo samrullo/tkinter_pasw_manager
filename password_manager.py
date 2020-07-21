@@ -9,7 +9,7 @@ from tkinter.filedialog import askopenfile
 
 
 class PasswordManager:
-    def __init__(self, window):
+    def __init__(self, window, pasw_folder=r"H:\Users\samrullo\GPAS_position\secrets", pasw_file=".pasw"):
         self.window = window
 
         # visual related
@@ -34,7 +34,7 @@ class PasswordManager:
 
         self.frameBody = Frame(self.window)
         self.frameBody.grid()
-        self.pasw_file = os.path.relpath(".pasw")
+        self.pasw_file = os.path.join(pasw_folder, pasw_file)
         self.client_pasw_dict = self.get_client_pasw_dict()
         self.make_searchbox_header()
         self.make_list_box()
@@ -143,6 +143,8 @@ class PasswordManager:
         ## calculate horizontal  and vertical paddings
         paddings = self.calc_paddings()
         self.frameNewClient.grid(row=0, column=0, padx=paddings[0], pady=paddings[1], sticky="nsew")
+        self.addClientObj.paswEntry.delete(0, END)
+        self.addClientObj.clientNameEntry.delete(0, END)
 
     def open_edit_client_pasw(self):
         client_pasw_lines = self.listBox.get(0, END)
